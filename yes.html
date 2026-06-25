@@ -18,6 +18,8 @@
       }
       .container {
         text-align: center;
+        z-index: 1;
+        position: relative;
       }
       h1 {
         color: #ff4757;
@@ -51,16 +53,18 @@
     </style>
   </head>
   <body>
+    <!-- Фон с котом -->
     <div class="cat-background">
       <img src="cat.gif" alt="кот" />
     </div>
 
+    <!-- Текст -->
     <div class="container">
       <h1>ТЫК</h1>
       <p>Нажми, чтобы увидеть всё</p>
     </div>
 
-    <!-- Музыка закомментирована, чтобы не играла и не вызывала ошибок -->
+    <!-- Музыка отключена -->
     <!-- 
     <audio id="music" loop>
       <source src="hapi-hapi-hapi.mp3" type="audio/mpeg" />
@@ -68,7 +72,7 @@
     -->
 
     <script>
-      console.log("Страница загружена");
+      console.log("Страница загружена без ошибок");
     </script>
   </body>
 </html>
